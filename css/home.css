@@ -1,0 +1,9 @@
+#hometext {
+  font-size: 55px;
+  font-family: 'Lobster', cursive;
+  color: white;
+  position: fixed;
+  top: 41%;
+  left: 42%;
+  text-align: center;
+}
