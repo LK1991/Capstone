@@ -1,25 +1,47 @@
 #hometext {
   font-size: 55px;
   font-family: 'Lobster', cursive;
-  color: white;
+  color: black;
   position: fixed;
   top: 41%;
-  left: 42%;
+  left: 36.6%;
   text-align: center;
+}
+
+#welcome {
+  font-size: 100px;
+  color: black;
+  position: fixed;
+  bottom: 50%;
+  left: 36.6%;
+  text-align: center;
+  opacity: 100;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.background {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  height: 400px;
+  width: 1287px;
+
 }
 
 #buttons {
   padding-top: 50px;
   text-align: center;
   position: fixed;
-  top: 45%;
-  left: 37%;
+  top: 60%;
+  left: 37.5%;
 }
 
 .btn {
   border-radius: 5px;
-  padding: 5px 25px;
-  font-size: 15px;
+  padding: 15px 50px;
+  font-size: 20px;
   text-decoration: none;
   margin: 20px;
   color: #fff;
