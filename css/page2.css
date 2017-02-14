@@ -7,14 +7,14 @@ padding: 0;
 .container {
   position: absolute;
   top: 40%;
-  border: 5px solid white;
+  border: 3px solid white;
   left: 7%;
 }
 
 #buttons {
   padding-top: 50px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 93%;
   bottom: 93%;
 }
@@ -42,4 +42,14 @@ padding: 0;
 
 .carousel-caption {
   font-size: 20px;
+}
+
+a {
+  position: absolute;
+  top: 130%;
+}
+
+.link {
+  color: black;
+  text-align: center;
 }
