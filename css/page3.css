@@ -1,7 +1,6 @@
 .container {
   position: absolute;
   top: 40%;
-  left: 7%;
   border: 3px solid black;
   padding-bottom: 21px;
   left: 7%;
@@ -10,7 +9,7 @@
 #buttons {
   padding-top: 50px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 93%;
   bottom: 93%;
 }
