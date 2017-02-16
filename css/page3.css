@@ -3,6 +3,8 @@
   top: 40%;
   left: 7%;
   border: 3px solid black;
+  padding-bottom: 21px;
+  left: 7%;
 }
 
 #buttons {
@@ -36,4 +38,21 @@
 
 .carousel-caption {
   font-size: 20px;
+}
+
+#nav {
+  top: 125%;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  left: 115px;
+  line-height: 170%;
+}
+
+#nav a {
+  color: black;
+}
+
+#nav a:hover {
+  color: #59d67d;
 }
