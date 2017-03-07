@@ -9,7 +9,7 @@
 #buttons {
   padding-top: 50px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 93%;
   bottom: 93%;
 }
@@ -54,4 +54,10 @@
 
 #nav a:hover {
   color: #59d67d;
+}
+
+#commentBox {
+    position: absolute;
+    top: 185%;
+    text-align: center;
 }
