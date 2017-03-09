@@ -49,9 +49,6 @@
   line-height: 170%;
 }
 
-p {
-  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
-}
 
 #nav a {
   color: black;
@@ -63,7 +60,7 @@ p {
 
 #commentBox {
     position: absolute;
-    top: 185%;
+    top: 189%;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     right: 40%;
@@ -74,7 +71,6 @@ p {
 .submitButton {
   background-color: #000;
     border: none;
-    color: white;
     padding: 7px 7px;
     text-align: center;
     text-decoration: none;
@@ -84,6 +80,10 @@ p {
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+}
+
+label {
+  color: black;
 }
 
 .button5 {
@@ -96,4 +96,19 @@ p {
 .button5:hover {
     background-color: #000;
     color: white;
+}
+
+
+p {
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+}
+
+#review {
+  top: 179%;
+  position: absolute;
+  font-size: 25px;
+  right: 45%;
+  line-height: 170%;
+  color: black;
+  font-family: 'Questrial', sans-serif;
 }
