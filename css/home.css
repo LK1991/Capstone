@@ -2,7 +2,7 @@
   font-size: 55px;
   font-family: 'Josefin Sans', sans-serif;
   color: black;
-  position: fixed;
+  position: absolute;
   top: 41%;
   left: 37.7%;
   text-align: center;
@@ -11,7 +11,7 @@
 #welcome {
   font-size: 100px;
   color: black;
-  position: fixed;
+  position: absolute;
   bottom: 50%;
   left: 32.5%;
   text-align: center;
@@ -39,7 +39,7 @@
 #buttons {
   padding-top: 50px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   top: 60%;
   left: 37.5%;
 }
@@ -80,4 +80,16 @@
 .purple:hover {
   background-color: #B573D0;
   color: black;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+  position: absolute;
+  top: 260%;
+  right: 50%;
+
+
+.red:hover {
+  background-color: #FF6656;
 }
