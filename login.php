@@ -1,11 +1,12 @@
+<html>
 <body id = "gradient">
   <head>
-    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/login.css" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <script type="text/javascript">
     var colors = new Array(
       [62,35,255],
@@ -50,20 +51,26 @@
     setInterval(updateGradient,10);
     </script>
   </head>
-  <div id = "buttons">
-    <a href="login.php" class = "btn red">Login</a>
+  <div>
+    <a href="home.html" class="btn red">Back</a>
   </div>
-    <div id = "buttons">
-      <a href="register.php" class = "btn yellow">Register</a>
-    </div>
-    <div class = "background">
-    <p id = "welcome">Welcome to</p>
-    <header id = "hometext">
-      Your Virtual Closet
-    </header>
+  <p id = "title">
+    Login
+  </p>
+  <div id= "form">
+    <form action="" method="POST">
+      <p>
+        <label>Username:</label>
+        <input type="text" id="user" name="user" />
+      </p>
+      <p>
+        <label>Password:</label>
+        <input type="password" id="pass" name="pass" />
+      </p>
+      <p>
+        <input type="submit" class="w3-button w3-hover-teal" value="Login" />
+      </p>
+     </form>
   </div>
-    <div id = "buttons">
-      <a href="page3.html" class="btn green">Guys</a>
-      <a href="page2.html" class="btn purple">Girls</a>
-    </div>
 </body>
+</html>
