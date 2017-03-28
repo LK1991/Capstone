@@ -112,3 +112,72 @@ p {
   color: black;
   font-family: 'Questrial', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Muli', sans-serif;
+}
+.weather-app, .weather-app_main, .weather-app_main__information {
+  position: absolute;
+  bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  width: 400px;
+}
+.weather-app_main {
+  position: absolute;
+  bottom: 50px;
+  background: #F5DB5C;
+  width: auto;
+  height: 11em;
+  box-shadow: 0px 9px 30px #CCC;
+  border-radius: 10px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation: bounce-in 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+          animation: bounce-in 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+.weather-app_main__information h1, .weather-app_main__information h2, .weather-app_main__information h3 {
+  color: rgba(43, 45, 66, 0.7);
+  margin: 0.57em 0;
+  font-size: 1.7em;
+}
+.weather-app_main__information img {
+  width: 65px;
+  height: 65px;
+}
+
+@-webkit-keyframes bounce-in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

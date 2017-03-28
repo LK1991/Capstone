@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <script src="weather.js"></script>
     <style>
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
@@ -65,9 +66,19 @@
   <div id = "buttons">
     <a href="home.html" class="btn red">Back</a>
   </div>
-  <div>
+  <!-- <div>
     <iframe src="https://weatherfor.us/widget?" scrolling="no" frameborder="0" allowtransparency="true" style="background: transparent; width: 720px; height: 250px; position: absolute; left: 25%;"></iframe>
+  </div> -->
+  <div class='weather-app'>
+  <div class='weather-app_main'>
+    <div class='weather-app_main__information'>
+      <img class='weather-app_main__information--icon' src='#'>
+      <h1 class='weather-app_main__information--city'></h1>
+      <h2 class='weather-app_main__information--temperature'></h2>
+      <h3 class='weather-app_main__information--description'></h3>
     </div>
+  </div>
+</div>
     <div class="container">
       <br>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
