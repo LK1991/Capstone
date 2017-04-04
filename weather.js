@@ -6,7 +6,7 @@ $(function() {
     var lon = data.lon;
 
 
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=metric" + "&appid=09e341f7a16aba16ee1a251b7b5ef0e4", function(data) {
+    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=Pasadena,ca=" + "&units=metric" + "&appid=09e341f7a16aba16ee1a251b7b5ef0e4", function(data) {
 
       // Our Data
       var icon = data.weather[0].icon;

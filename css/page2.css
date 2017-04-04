@@ -120,8 +120,8 @@ p {
   font-family: 'Muli', sans-serif;
 }
 .weather-app, .weather-app_main, .weather-app_main__information {
-  position: absolute;
-  bottom: 50px;
+  position: relative;
+  bottom: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,19 +137,16 @@ p {
   margin: 0 auto;
   width: 400px;
 }
-.weather-app_main {
-  position: absolute;
-  bottom: 50px;
-  background: #F5DB5C;
+/*.weather-app_main {
+  position: relative;
+  bottom: 70px;
   width: auto;
   height: 11em;
-  box-shadow: 0px 9px 30px #CCC;
-  border-radius: 10px;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-animation: bounce-in 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
           animation: bounce-in 900ms cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
+}*/
 .weather-app_main__information h1, .weather-app_main__information h2, .weather-app_main__information h3 {
   color: rgba(43, 45, 66, 0.7);
   margin: 0.57em 0;
@@ -180,4 +177,3 @@ p {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
