@@ -23,3 +23,81 @@ $(function() {
     })
   })
 });
+
+var imgArray = new Array();
+
+imgArray[0] = new Image();
+imgArray[0] = "images/1stoutfit.png";
+
+imgArray[1] = new Image();
+imgArray[1] = "images/1outfitt.png";
+
+imgArray[2] = new Image();
+imgArray[2] = "images/2ndoutfit.png";
+
+imgArray[3] = new Image();
+imgArray[3] = "images/2ndoutfitt.png";
+
+imgArray[4] = new Image();
+imgArray[4] = "images/3rdoutfit.png";
+
+imgArray[5] = new Image();
+imgArray[5] = "images/3rdoutfitt.png";
+
+imgArray[6] = new Image();
+imgArray[6] = "images/4thoutfit.png";
+
+imgArray[7] = new Image();
+imgArray[7] = "images/4thoutfitt.png";
+
+imgArray[8] = new Image();
+imgArray[8] = "images/5thoutfit.png";
+
+imgArray[9] = new Image();
+imgArray[9] = "images/5thoutfitt.png";
+
+imgArray[10] = new Image();
+imgArray[10] = "images/6thoutfit.png";
+
+imgArray[11] = new Image();
+imgArray[11] = "images/6thoutfitt.png";
+
+imgArray[12] = new Image();
+imgArray[12] = "images/guyoutfit1.png";
+
+imgArray[13] = new Image();
+imgArray[13] = "images/guyoutfit2.png";
+
+imgArray[14] = new Image();
+imgArray[14] = "images/guyoutfit3.png";
+
+imgArray[15] = new Image();
+imgArray[15] = "images/guyoutfit4.png";
+
+imgArray[16] = new Image();
+imgArray[16] = "images/guyoutfit5.png";
+
+imgArray[17] = new Image();
+imgArray[17] = "images/guyoutfit6.png";
+
+imgArray[18] = new Image();
+imgArray[18] = "images/guyoutfit22.png";
+
+imgArray[19] = new Image();
+imgArray[19] = "images/guyoutfit33.png";
+
+imgArray[20] = new Image();
+imgArray[20] = "images/guyoutfit44.png";
+
+imgArray[21] = new Image();
+imgArray[21] = "images/guyoutfit55.png";
+
+imgArray[22] = new Image();
+imgArray[22] = "images/guyoutfit66.png";
+
+imgArray[23] = new Image();
+imgArray[23] = "images/guyoutfitt.png";
+
+function chooseOutfit() {
+
+}
