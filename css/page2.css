@@ -1,5 +1,5 @@
 .weatherNow {
-  position: absolute;
+  position: relative;
   top: 40%;
   border: 3px solid white;
   padding-bottom: 21px;
