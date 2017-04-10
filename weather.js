@@ -28,9 +28,9 @@ $(function() {
 
   function getOutfit() {
     var htmlstr = '';
-    if(ourTemp <= 60) {
-      document.getElementById("weatherNow").innerHTML = '<img width=300 top=40 src= "images/1stoutfit.png" >';
-    } else {
+    if(ourTemp >= 60) {
+      document.getElementById("weatherNow").innerHTML = '<img width=300 src= "images/1stoutfit.png" >';
+    } else () {
 
     }
   }
