@@ -1,9 +1,7 @@
-.weatherNow {
-  position: relative;
-  top: 40%;
-  border: 3px solid white;
-  padding-bottom: 21px;
-  left: 7%;
+#weatherNow {
+  position: absolute;
+  top: 43%;
+  left: 12%;
 }
 
 #buttons {

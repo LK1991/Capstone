@@ -28,8 +28,18 @@ $(function() {
 
   function getOutfit() {
     if (ourTemp <= 60) {
-      document.getElementById("weatherNow").innerHTML = '<img width=300 src= "images/1stoutfit.png" >';
-    } 
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/1stoutfit.png" >' + '<img width=322 height=500 src= "images/1stoutfitt.png" >';
+    } else if (ourTemp >= 60 && ourTemp <= 75) {
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/2ndoutfit.png" >' + '<img width=322 height=500 src= "images/2ndoutfitt.png" >';
+    } else if (ourTemp >= 75 && ourTemp <= 80) {
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/3rdoutfit.png" >' + '<img width=322 height=500 src= "images/3rdoutfitt.png" >';
+    } else if (ourTemp >= 80 && ourTemp <= 85) {
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/4thoutfit.png" >' + '<img width=322 height=500 src= "images/4thoutfitt.png" >';
+    } else if (ourTemp >= 85 && ourTemp <= 90) {
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/5thoutfit.png" >' + '<img width=322 height=500 src= "images/5thoutfitt.png" >';
+    } else {
+      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/6thoutfit.png" >' + '<img width=322 height=500 src= "images/6thoutfitt.png" >';
+    }
   }
 
 getOutfit();
