@@ -1,10 +1,9 @@
-.container {
+#weatherNow {
   position: absolute;
-  top: 40%;
-  border: 3px solid black;
-  padding-bottom: 21px;
-  left: 7%;
+  top: 43%;
+  left: 12%;
 }
+
 
 #buttons {
   padding-top: 50px;
