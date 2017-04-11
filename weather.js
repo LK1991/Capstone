@@ -42,6 +42,11 @@ $(function() {
     }
   }
 
+  function getCaption() {
+
+  }
+
+getCaption();
 getOutfit();
 
 });

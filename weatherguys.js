@@ -41,7 +41,6 @@ $(function() {
       document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit6.png" >' + '<img width=322 height=500 src= "images/guyoutfit66.jpg" >';
     }
   }
-
 getOutfit();
 
 });
