@@ -43,7 +43,19 @@ $(function() {
   }
 
   function getCaption() {
-
+    if (ourTemp <= 60) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'This outfit is perfect to wear in cold weather because it will keep you warm, cozy, and comfortable.' + '</p>';
+    } else if (ourTemp >= 60 && ourTemp <= 75) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'This is a light and airy outfit to keep you cool and warm at the same time' + '</p>';
+    } else if (ourTemp >= 75 && ourTemp <= 80) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'This is an open outfit to keep you fresh on a warm sunny day.' + '</p>';
+    } else if (ourTemp >= 80 && ourTemp <= 85) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Its hotter now so lets bring out the shorts and crop top!' + '</p>';
+    } else if (ourTemp >= 85 && ourTemp <= 90) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'This is a great outfit when you dont know what to wear on a hot day. Its simple and fashionable.' + '</p>';
+    } else {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Layering neutrals can be chic and important when it comes to that humid weather.' + '</p>';
+    }
   }
 
 getCaption();
