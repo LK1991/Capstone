@@ -46,7 +46,7 @@ $(function() {
     if (ourTemp <= 60) {
       document.getElementById("captionNow").innerHTML = '<p>' + 'These outfits are perfect to wear in cold weather because they will keep you warm, cozy, and comfortable.' + '</p>';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
-      document.getElementById("captionNow").innerHTML = '<p>' + 'These are light and airy outfits to keep you cool and warm at the same time' + '</p>';
+      document.getElementById("captionNow").innerHTML = '<p>' + 'These are light and airy outfits to keep you cool and warm at the same time.' + '</p>';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
       document.getElementById("captionNow").innerHTML = '<p>' + 'There are open outfits to keep you fresh on a warm sunny day.' + '</p>';
     } else if (ourTemp >= 80 && ourTemp <= 85) {

@@ -28,19 +28,37 @@ $(function() {
 
   function getOutfit() {
     if (ourTemp <= 60) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit1.png" >' + '<img width=322 height=500 src= "images/guyoutfitt.jpg" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=327 height=500 style="margin: 0px 100px" src= "images/guyoutfit1.png" >' + '<img width=328 height=500 src= "images/guyoutfitt.jpg" >';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit2.png" >' + '<img width=322 height=500 src= "images/guyoutfit22.jpg" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=325 height=500 style="margin: 0px 100px" src= "images/guyoutfit2.png" >' + '<img width=366 height=500 src= "images/guyoutfit22.jpg" >';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit3.png" >' + '<img width=322 height=500 src= "images/guyoutfit33.jpg" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=324 height=500 style="margin: 0px 100px" src= "images/guyoutfit3.png" >' + '<img width=400 height=500 src= "images/guyoutfit33.jpg" >';
     } else if (ourTemp >= 80 && ourTemp <= 85) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit4.png" >' + '<img width=322 height=500 src= "images/guyoutfit44.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=324 height=500 style="margin: 0px 100px" src= "images/guyoutfit4.png" >' + '<img width=330 height=500 src= "images/guyoutfit44.png" >';
     } else if (ourTemp >= 85 && ourTemp <= 90) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit5.png" >' + '<img width=322 height=500 src= "images/guyoutfit55.jpg" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=313 height=500 style="margin: 0px 100px" src= "images/guyoutfit5.png" >' + '<img width=313 height=500 src= "images/guyoutfit55.jpg" >';
     } else {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/guyoutfit6.png" >' + '<img width=322 height=500 src= "images/guyoutfit66.jpg" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=322 height=500 style="margin: 0px 100px" src= "images/guyoutfit6.png" >' + '<img width=400 height=500 src= "images/guyoutfit66.jpg" >';
     }
   }
+
+  function getCaption() {
+    if (ourTemp <= 60) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'A nice sweater and jeans will keep you warm in this cold weather.' + '</p>';
+    } else if (ourTemp >= 60 && ourTemp <= 75) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Drop the sweater and go for something lighter like a jacket to top off your outfit.' + '</p>';
+    } else if (ourTemp >= 75 && ourTemp <= 80) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Bring out the t-shirts to keep you chilly on this warm day.' + '</p>';
+    } else if (ourTemp >= 80 && ourTemp <= 85) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Its getting hotter now so bring out the shorts!' + '</p>';
+    } else if (ourTemp >= 85 && ourTemp <= 90) {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'A tank top is a great option for this kind of hot day.' + '</p>';
+    } else {
+      document.getElementById("captionNow").innerHTML = '<p>' + 'Shorts and a tank is a simple outfit for boiling hot weather.' + '</p>';
+    }
+}
+
+getCaption();
 getOutfit();
 
 });
