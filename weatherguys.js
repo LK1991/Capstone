@@ -23,10 +23,15 @@ $(function() {
       $(".weather-app_main__information--icon").attr("src", icon_replace.replace("#", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/217538/" + icon + ".png"));
       $(".weather-app_main__information--temperature").html(temp + "°F");
       $(".weather-app_main__information--description").html(cDescription);
+      getOutfit(data);
+      getCaption(data);
     })
   })
 
-  function getOutfit() {
+  function getOutfit(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
     if (ourTemp <= 60) {
       document.getElementById("weatherNow").innerHTML = '<img width=327 height=500 style="margin: 0px 100px" src= "images/guyoutfit1.png" >' + '<img width=328 height=500 src= "images/guyoutfitt.jpg" >';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
@@ -42,7 +47,10 @@ $(function() {
     }
   }
 
-  function getCaption() {
+  function getCaption(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
     if (ourTemp <= 60) {
       document.getElementById("captionNow").innerHTML = '<p>' + 'A nice sweater and jeans will keep you warm in this cold weather.' + '</p>';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
@@ -57,8 +65,5 @@ $(function() {
       document.getElementById("captionNow").innerHTML = '<p>' + 'Shorts and a tank is a simple outfit for boiling hot weather.' + '</p>';
     }
 }
-
-getCaption();
-getOutfit();
 
 });

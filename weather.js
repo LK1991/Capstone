@@ -23,26 +23,34 @@ $(function() {
       $(".weather-app_main__information--icon").attr("src", icon_replace.replace("#", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/217538/" + icon + ".png"));
       $(".weather-app_main__information--temperature").html(temp + "°F");
       $(".weather-app_main__information--description").html(cDescription);
+      getOutfit(data);
+      getCaption(data);
     })
   })
 
-  function getOutfit() {
+  function getOutfit(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
     if (ourTemp <= 60) {
       document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/1stoutfit.png" >' + '<img width=322 height=500 src= "images/1stoutfitt.png" >';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/2ndoutfit.png" >' + '<img width=322 height=500 src= "images/2ndoutfitt.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=322 height=500 style="margin: 0px 100px" src= "images/2ndoutfit.png" >' + '<img width=320 height=500 src= "images/2ndoutfitt.png" >';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/3rdoutfit.png" >' + '<img width=322 height=500 src= "images/3rdoutfitt.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=325 height=500 style="margin: 0px 100px" src= "images/3rdoutfit.png" >' + '<img width=321 height=500 src= "images/3rdoutfitt.png" >';
     } else if (ourTemp >= 80 && ourTemp <= 85) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/4thoutfit.png" >' + '<img width=322 height=500 src= "images/4thoutfitt.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=371 height=500 style="margin: 0px 100px" src= "images/4thoutfit.png" >' + '<img width=321 height=500 src= "images/4thoutfitt.png" >';
     } else if (ourTemp >= 85 && ourTemp <= 90) {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/5thoutfit.png" >' + '<img width=322 height=500 src= "images/5thoutfitt.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=325 height=500 style="margin: 0px 100px" src= "images/5thoutfit.png" >' + '<img width=346 height=500 src= "images/5thoutfitt.png" >';
     } else {
-      document.getElementById("weatherNow").innerHTML = '<img width=400 height=500 style="margin: 0px 100px" src= "images/6thoutfit.png" >' + '<img width=322 height=500 src= "images/6thoutfitt.png" >';
+      document.getElementById("weatherNow").innerHTML = '<img width=324 height=500 style="margin: 0px 100px" src= "images/6thoutfit.png" >' + '<img width=359 height=500 src= "images/6thoutfitt.png" >';
     }
   }
 
-  function getCaption() {
+  function getCaption(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
     if (ourTemp <= 60) {
       document.getElementById("captionNow").innerHTML = '<p>' + 'These outfits are perfect to wear in cold weather because they will keep you warm, cozy, and comfortable.' + '</p>';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
@@ -57,7 +65,4 @@ $(function() {
       document.getElementById("captionNow").innerHTML = '<p>' + 'Layering neutrals can be chic and important when it comes to that humid weather.' + '</p>';
     }
 }
-getCaption();
-getOutfit();
-
 });
