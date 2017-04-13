@@ -91,12 +91,11 @@ label {
     color: white;
 }
 
-
 figcaption {
   font-size: 21px;
   font-family: 'Questrial', sans-serif;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 155px;
   color: black;
   position: relative;
 }
@@ -140,6 +139,7 @@ figcaption {
   color: black;
   margin: 0.57em 0;
   font-size: 1.7em;
+  font-family: 'Didact Gothic', sans-serif;
 }
 .weather-app_main__information img {
   width: 80px;

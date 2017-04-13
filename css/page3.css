@@ -34,16 +34,11 @@
   background-color: #FF6656;
 }
 
-.carousel-caption {
-  font-size: 19px;
-  font-family: 'Comfortaa', cursive;
-}
-
 figcaption {
   font-size: 21px;
   font-family: 'Questrial', sans-serif;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 155px;
   color: black;
   position: relative;
 }
@@ -119,7 +114,6 @@ label {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Muli', sans-serif;
 }
 .weather-app, .weather-app_main, .weather-app_main__information {
   position: relative;
@@ -144,6 +138,7 @@ label {
   color: black;
   margin: 0.57em 0;
   font-size: 1.7em;
+  font-family: 'Didact Gothic', sans-serif;
 }
 .weather-app_main__information img {
   width: 80px;
