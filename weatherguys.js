@@ -25,6 +25,7 @@ $(function() {
       $(".weather-app_main__information--description").html(cDescription);
       getOutfit(data);
       getCaption(data);
+      getLink(data);
     })
   })
 
@@ -65,5 +66,25 @@ $(function() {
       document.getElementById("captionNow").innerHTML = '<p>' + 'Shorts and a tank is a simple outfit for boiling hot weather.' + '</p>';
     }
 }
+
+  function getLink(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
+    if (ourTemp <= 60) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-sweatshirts-hoodies&ProductID=2000190465&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.hm.com/us/product/38486?article=38486-F" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 60 && ourTemp <= 75) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-jackets-and-coats-denim&ProductID=2000250289&VariantID=061" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.hm.com/us/product/59506?article=59506-A" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 75 && ourTemp <= 80) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-tees-tanks&ProductID=2000214950&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.zumiez.com/rip-n-dip-lord-nermal-pocket-tee-shirt.html" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 80 && ourTemp <= 85) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-bottom-shorts&ProductID=2000226080&VariantID=013" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-tees-tanks&ProductID=2000191075&VariantID=011" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 85 && ourTemp <= 90) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.pacsun.com/pacsun/lucis-destroyed-extended-length-tank-top-0124468680006.html?cgid=mens&dwvar_0124468680006_color=031&start=84" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.pacsun.com/obey/working-man-ii-shorts-0170502750004.html?cgid=mens&dwvar_0170502750004_color=619&prefn1=mens-shop-by-style&start=54&prefv1=Shorts&dwvar_0170502750004_size=3800#" target="_blank">Outfit 2</a>' + '</li>';
+    } else {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-tees-tanks&ProductID=2000190898&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.zumiez.com/volcom-base-coast-black-tank-top.html" target="_blank">Outfit 2</a>' + '</li>';
+    }
+  }
+  }
 
 });

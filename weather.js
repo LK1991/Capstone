@@ -76,7 +76,7 @@ $(function() {
     } else if (ourTemp >= 60 && ourTemp <= 75) {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/EU/Product/Product.aspx?BR=f21&Category=top_t-shirts&ProductID=2000285833&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweater&ProductID=2000190747&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
-      document.getElementById("nav").innerHTML = '<li>' + 'http://www.forever21.com/Product/Product.aspx?BR=f21&Category=top_blouses&ProductID=2000226435&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-tops&ProductID=2000214529&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=f21&Category=top_blouses&ProductID=2000226435&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-tops&ProductID=2000214529&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 80 && ourTemp <= 85) {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=f21&Category=bottoms_shorts&ProductID=2000058084&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-dresses&ProductID=2000191045&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 85 && ourTemp <= 90) {
