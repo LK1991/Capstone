@@ -85,6 +85,6 @@ $(function() {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-tees-tanks&ProductID=2000190898&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.zumiez.com/volcom-base-coast-black-tank-top.html" target="_blank">Outfit 2</a>' + '</li>';
     }
   }
-  }
+  
 
 });

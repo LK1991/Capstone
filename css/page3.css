@@ -62,7 +62,7 @@ figcaption {
 
 #commentBox {
     position: absolute;
-    top: 194%;
+    top: 152%;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     right: 40%;
@@ -97,7 +97,7 @@ figcaption {
 }
 
 #review {
-  top: 184%;
+  top: 142%;
   position: absolute;
   font-size: 25px;
   right: 45%;
