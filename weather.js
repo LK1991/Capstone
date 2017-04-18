@@ -25,6 +25,7 @@ $(function() {
       $(".weather-app_main__information--description").html(cDescription);
       getOutfit(data);
       getCaption(data);
+      getLink(data);
     })
   })
 
@@ -65,4 +66,23 @@ $(function() {
       document.getElementById("captionNow").innerHTML = '<p>' + 'Layering neutrals can be chic and important when it comes to that humid weather.' + '</p>';
     }
 }
+
+  function getLink(data) {
+    var temp = Math.round(data.main.temp * 9 / 5 + 32);
+    ourTemp = temp;
+
+    if (ourTemp <= 60) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="https://www.hollisterco.com/shop/us/girls-tops-online-exclusives/oversized-graphic-hoodie-8788200_03?ofp=true" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweatshirts-hoodies&ProductID=2000321568&VariantID=011" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 60 && ourTemp <= 75) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/EU/Product/Product.aspx?BR=f21&Category=top_t-shirts&ProductID=2000285833&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweater&ProductID=2000190747&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 75 && ourTemp <= 80) {
+      document.getElementById("nav").innerHTML = '<li>' + 'http://www.forever21.com/Product/Product.aspx?BR=f21&Category=top_blouses&ProductID=2000226435&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-tops&ProductID=2000214529&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 80 && ourTemp <= 85) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=f21&Category=bottoms_shorts&ProductID=2000058084&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-dresses&ProductID=2000191045&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
+    } else if (ourTemp >= 85 && ourTemp <= 90) {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=f21&Category=dress&ProductID=2000285602&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.debshops.com/ProductDetail/1005799_001" target="_blank">Outfit 2</a>' + '</li>';
+    } else {
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=f21&Category=bottoms_shorts&ProductID=2000205208&VariantID=052" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.debshops.com/PlusSize/Plus+Size+Soft+Knit+Stripe+Dress%7C1005314_012" target="_blank">Outfit 2</a>' + '</li>';
+    }
+  }
 });
