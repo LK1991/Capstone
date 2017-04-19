@@ -45,3 +45,15 @@
 .red:hover {
   background-color: #FF6656;
 }
+
+#personalCloset {
+  color: black;
+  top: 45%;
+  float: right;
+  right: 1%;
+  position: relative;
+}
+
+#personalCloset a:hover {
+   color:	#4B0082;
+}

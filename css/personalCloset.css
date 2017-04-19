@@ -1,0 +1,31 @@
+.btn {
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 10px;
+  top: 3%;
+  left: 3%;
+  color: #fff;
+  display: inline-block;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.red:hover {
+  background-color: #FF6656;
+}
+
+#welcome {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  position: absolute;
+  top: 0.5%;
+  left: 25%;
+  text-align: center;
+  color: black;
+}
