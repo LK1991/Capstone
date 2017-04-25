@@ -72,7 +72,7 @@ $(function() {
     ourTemp = temp;
 
     if (ourTemp <= 60) {
-      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-sweatshirts-hoodies&ProductID=2000190465&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.hm.com/us/product/38486?article=38486-F" target="_blank">Outfit 2</a>' + '</li>';
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/EU/Product/Product.aspx?BR=f21&Category=blogger_favourites&ProductID=2000190465&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.hm.com/us/product/38486?article=38486-F" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-jackets-and-coats-denim&ProductID=2000250289&VariantID=061" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.hm.com/us/product/59506?article=59506-A" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
@@ -85,6 +85,6 @@ $(function() {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=21men&Category=mens-tees-tanks&ProductID=2000190898&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.zumiez.com/volcom-base-coast-black-tank-top.html" target="_blank">Outfit 2</a>' + '</li>';
     }
   }
-  
+
 
 });
