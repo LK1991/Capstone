@@ -1,6 +1,6 @@
 #weatherNow {
   top: 43%;
-  left: 14%;
+  left: 15%;
   position: absolute;
 }
 
@@ -61,6 +61,13 @@
     font-size: 20px;
 }
 
+.w3-button {
+  top: 139%;
+  left: 10%;
+  margin-top: 10px;
+  position: absolute;
+}
+
 
 .submitButton {
   background-color: #000;
@@ -96,9 +103,8 @@ figcaption {
   font-size: 21px;
   font-family: 'Questrial', sans-serif;
   text-align: center;
-  padding-top: 155px;
+  padding-top: 138px;
   color: black;
-  position: relative;
 }
 
 #review {

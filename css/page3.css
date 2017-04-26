@@ -13,6 +13,13 @@
   bottom: 93%;
 }
 
+.w3-button {
+  top: 139%;
+  left: 10%;
+  margin-top: 10px;
+  position: absolute;
+}
+
 .btn {
   border-radius: 5px;
   padding: 5px 25px;
