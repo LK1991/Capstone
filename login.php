@@ -68,12 +68,11 @@
         <input type="password" id="pass" name="pass" />
       </p>
       <p>
-        <button onclick="clickFunction()" class="w3-button w3-hover-teal" >Login </button>
+        <a href= "home.html" onclick="clickFunction()" class="button" >Login </a>
       </p>
       <script type="text/javascript">
         function clickFunction() {
           alert("You're Logged In!");
-          $("button").setAttribute("href", "home.html");
         }
       </script>
      </form>
