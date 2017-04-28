@@ -68,8 +68,13 @@
         <input type="password" id="pass" name="pass" />
       </p>
       <p>
-        <input type="submit" class="w3-button w3-hover-teal" value="Register" />
+        <a href= "home.html" onclick="clickFunction()" class="button" >Register </a>
       </p>
+      <script type="text/javascript">
+        function clickFunction() {
+          alert("You've been registered!");
+        }
+      </script>
      </form>
   </div>
 </body>
