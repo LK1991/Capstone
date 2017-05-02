@@ -37,3 +37,25 @@ img {
   margin-bottom: 13px;
   padding-right: 15px;
 }
+
+.back-to-top {
+    background-color:#fff;
+    border:1px solid #fff;
+    bottom:0px;
+    color:#000;
+    display:none;
+    float:left;
+    font-size:25px;
+    padding:10px 10px 5px;
+    position:fixed;
+    right:30px;
+    text-decoration:none;
+    z-index:99999;
+    -webkit-border-radius:10px 10px 0 0;
+    -moz-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+}
+
+.back-to-top a:hover {
+  text-decoration:none;
+}

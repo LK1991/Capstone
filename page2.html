@@ -85,7 +85,12 @@
 </figure>
   <div id = "nav">
 </div>
-<button class="w3-button w3-black">Save</button>
+<button class="w3-button w3-black" onclick="clickFunction()">Save</button>
+<script type="text/javascript">
+  function clickFunction() {
+    alert("Saved!");
+  }
+</script>
 
 <h4 id = "review"> Leave us a review! </h4>
 
@@ -103,4 +108,23 @@
 		<button class = "submitButton button5">Submit</button>
 	</div>
 </div>
+<a href="#top" class="back-to-top">👆</a>
+<script>
+$(document).ready(function() {
+ $('.back-to-top').css('display', 'none');
+
+  $('a.back-to-top').click(function(e){
+      $('html, body').animate({scrollTop:0}, 'slow');
+      e.preventDefault();
+  });
+
+  $(window).scroll(function() {
+      if ($('body').offset().top < $(window).scrollTop()) {
+          $('.back-to-top').slideDown('fast');
+      } else {
+          $('.back-to-top').slideUp('fast');
+      }
+  });
+});
+</script>
 </body>

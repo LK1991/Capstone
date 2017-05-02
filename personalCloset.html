@@ -52,8 +52,27 @@
     <a href="home.html" class="btn red">Back</a>
   </div>
   <p id = "welcome">Welcome to Your Personal Closet<p>
-  <img src="images/1stoutfit.png">
-  <img src="images/1stoutfitt.png"><br>
-  <img src="images/guyoutfit1.png">
-  <img src="images/guyoutfitt.jpg">
+  <img src="images/2ndoutfit.png">
+  <img src="images/2ndoutfitt.png"><br>
+  <img src="images/guyoutfit2.png">
+  <img src="images/guyoutfit22.jpg">
+  <a href="#" class="back-to-top">👆</a>
+  <script>
+$(document).ready(function() {
+   $('.back-to-top').css('display', 'none');
+
+    $('a.back-to-top').click(function(e){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        e.preventDefault();
+    });
+
+    $(window).scroll(function() {
+        if ($('body').offset().top < $(window).scrollTop()) {
+            $('.back-to-top').slideDown('fast');
+        } else {
+            $('.back-to-top').slideUp('fast');
+        }
+    });
+});
+</script>
 </body>
