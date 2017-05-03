@@ -1,7 +1,7 @@
 #weatherNow {
   position: absolute;
   top: 43%;
-  left: 15%;
+  left: 14.5%;
 }
 
 
@@ -15,7 +15,7 @@
 
 .w3-button {
   top: 139%;
-  left: 10%;
+  left: 17%;
   margin-top: 10px;
   position: absolute;
   -webkit-border-radius: 11;
@@ -48,9 +48,10 @@ figcaption {
   font-size: 21px;
   font-family: 'Questrial', sans-serif;
   text-align: center;
-  padding-top: 155px;
+  padding-top: 138px;
   color: black;
   position: relative;
+  left: 1.5%;
 }
 
 #nav {
@@ -58,7 +59,7 @@ figcaption {
   position: absolute;
   text-align: center;
   font-size: 18px;
-  left: 115px;
+  left: 200px;
   line-height: 170%;
   font-family: 'Questrial', sans-serif;
 }
