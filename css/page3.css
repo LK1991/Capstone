@@ -78,6 +78,8 @@ figcaption {
     font-family: 'Quicksand', sans-serif;
     right: 40%;
     font-size: 20px;
+    display: inline-block;
+    width: 240px;
 }
 
 .submitButton {
@@ -89,7 +91,7 @@ figcaption {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 2px 2px;
+    margin: 5px 5px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
@@ -108,10 +110,10 @@ figcaption {
 }
 
 #review {
-  top: 142%;
+  top: 143%;
   position: absolute;
   font-size: 25px;
-  right: 45%;
+  right: 41.6%;
   line-height: 170%;
   color: black;
   font-family: 'Questrial', sans-serif;
@@ -196,6 +198,6 @@ label {
     border-radius:10px 10px 0 0;
 }
 
-.back-to-top a:hover {
+.back-to-top:hover {
   text-decoration: none;
 }
