@@ -72,7 +72,7 @@ $(function() {
     ourTemp = temp;
 
     if (ourTemp <= 60) {
-      document.getElementById("nav").innerHTML = '<li>' + '<a href="https://www.hollisterco.com/shop/us/girls-tops-online-exclusives/oversized-graphic-hoodie-8788200_03?ofp=true" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweatshirts-hoodies&ProductID=2000321568&VariantID=011" target="_blank">Outfit 2</a>' + '</li>';
+      document.getElementById("nav").innerHTML = '<li>' + '<a href="https://www.hollisterco.com/shop/us/girls-hoodies-and-sweatshirts-tops/oversized-graphic-crew-sweatshirt-9348832_02?ofp=true" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweatshirts-hoodies&ProductID=2000321568&VariantID=011" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 60 && ourTemp <= 75) {
       document.getElementById("nav").innerHTML = '<li>' + '<a href="http://www.forever21.com/EU/Product/Product.aspx?BR=f21&Category=top_t-shirts&ProductID=2000285833&VariantID=" target="_blank">Outfit 1</a>' + '</li>' + '<li>' + '<a href="http://www.forever21.com/Product/Product.aspx?BR=plus&Category=plus_size-sweater&ProductID=2000190747&VariantID=" target="_blank">Outfit 2</a>' + '</li>';
     } else if (ourTemp >= 75 && ourTemp <= 80) {
